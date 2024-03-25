@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "userName": "MrAdmin",
+      "password": "$2a$08$adKDmja0RQamK08GpqX1eugwnxRXiwc7sB0dI/gb5sTyQTQTBqUg6",
+      "passwordNoHash": "m12345",
+      "role": "admin"
+    },
+    {
+      "id": "1",
+      "userName": "Domas",
+      "password": "$2a$08$7mCkD1B0rrseIn.hlrU.PuX99X4YDyo.eT1J7GFyiGKeqXmkWA9AW",
+      "passwordNoHash": "d12345",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "userName": "Povilas",
+      "password": "$2a$08$Q/knWERPIcs3avnrWfkdluY/y57QR7vvmEqkthm49YVelFwQq.rZW",
+      "passwordNoHash": "p12345",
+      "role": "user"
+    }
+  ],
+  "cards": [
+    {
+      "id": "0",
+      "userId": "1",
+      "type": "Nature Photography",
+      "photo": "https://yaffa-cdn.s3.amazonaws.com/yaffadsp/images/dmImage/StandardImage/z8_hero1.jpg",
+      "camera": "Canon EOS 5D MK4",
+      "lens": "Canon 16-35mm, f2.8",
+      "housing": "SeaandSea",
+      "flashes": "SeaandSea d2",
+      "F-Stop": 5.6,
+      "Exposure": 260,
+      "iso": 3200,
+      "country": "Lithuania",
+      "place": "lake",
+      "deph": 3,
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    },
+    {
+      "id": "0",
+      "userId": "2",
+      "type": "Nature Photography",
+      "photo": "https://yaffa-cdn.s3.amazonaws.com/yaffadsp/images/dmImage/StandardImage/z8_hero1.jpg",
+      "camera": "Canon EOS 5D MK4",
+      "lens": "Canon 16-35mm, f2.8",
+      "housing": "SeaandSea",
+      "flashes": "SeaandSea d2",
+      "F-Stop": 5.6,
+      "Exposure": 260,
+      "iso": 3200,
+      "country": "Lithuania",
+      "place": "lake",
+      "deph": 3,
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    },
+    {
+      "id": "0",
+      "userId": "3",
+      "type": "Nature Photography",
+      "photo": "https://yaffa-cdn.s3.amazonaws.com/yaffadsp/images/dmImage/StandardImage/z8_hero1.jpg",
+      "camera": "Canon EOS 5D MK4",
+      "lens": "Canon 16-35mm, f2.8",
+      "housing": "SeaandSea",
+      "flashes": "SeaandSea d2",
+      "F-Stop": 5.6,
+      "Exposure": 260,
+      "iso": 3200,
+      "country": "Lithuania",
+      "place": "lake",
+      "deph": 3,
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    }
+  ]
+}
