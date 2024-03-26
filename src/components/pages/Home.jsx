@@ -2,33 +2,23 @@ import styled from "styled-components";
 
 const StyledHome = styled.div`
 background-color: rgb(220, 211, 216);
-padding-bottom: 20px;
 > h2{
-    text-align: center;
     color: rgb(34, 61, 89);
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 30px;
 }
 > div{
     display: flex;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
     gap: 10px;
     > iframe{
         width: 40%;
     }
     > p{
         width: 60%;
-        display: flex;
-        align-items: center;
-        font-size: 12px;
+        font-size: 14px;
         text-indent: 25px;
         color: rgb(34, 61, 89);
-        margin: 0 ;
-        text-align: justify;                              
+        text-align
     }
 }
 `;
