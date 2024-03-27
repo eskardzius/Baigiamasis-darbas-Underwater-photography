@@ -43,6 +43,12 @@ const Login = () => {
   const [wrongCredentials, setWrongCredentials] = useState(false);
   const { users, setLoggedInUser } = useContext(UsersContext);
 
+  users.map((user) => {
+    const salt = bcrypt.genSaltSync(10);
+    const correctPassword = bcrypt.hashSync(user.passwordNoHash, salt);
+    console.log(correctPassword);
+  });
+
   const formik = useFormik({
     initialValues:{
       userName: "",
