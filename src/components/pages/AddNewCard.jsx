@@ -13,12 +13,14 @@ const StyledSection = styled.section`
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(215, 211, 199);;
 
   > h1{
     font-size: 3rem;
   }
 
-  > form{
+    > form {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -40,41 +42,48 @@ const StyledSection = styled.section`
 `;
 
 const AddNewCard = () => {
-
   const navigate = useNavigate();
   const { loggedInUser } = useContext(UsersContext);
   const { setCards } = useContext(CardsContext);
+  const date = new Date();
 
   const formik = useFormik({
     initialValues: {
       title: "",
-      description: ""
-    }, 
-    onSubmit: values => {
+      description: "",
+      photoUrl: "",
+    },
+    onSubmit: (values) => {
       const newCard = {
         id: uuid(),
         userId: loggedInUser.id,
-        ...values
-      }
-      // console.log(newCard);
+        dateAdded: date.toLocaleDateString("lt-LT", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        }),
+        ...values,
+      };
+
       setCards({
         type: CardsActionTypes.addNew,
         data: newCard
       });
-      navigate(-1);
+      //navigate(-1);
     },
     validationSchema: Yup.object({
       title: Yup.string()
-        .min(5, 'Title must be at least 5 symbols length')
+        .min(5, "Title must be at least 5 symbols length")
         .max(50, "Title can't be longer than 50 symbols")
-        .required('This field must be filled')
+        .required("This field must be filled")
         .trim(),
       description: Yup.string()
-        .min(5, 'Description must be at least 5 symbols length')
+        .min(5, "Description must be at least 5 symbols length")
         .max(500, "Description can't be longer than 500 symbols")
-        .required('This field must be filled')
-        .trim()
-    })
+        .required("This field must be filled")
+        .trim(),
+      photoUrl: Yup.string().url().required("This field must be filled").trim(),
+    }),
   });
 
   return (
@@ -99,7 +108,8 @@ const AddNewCard = () => {
         <div>
           <label htmlFor="description">Description:</label>
           <textarea
-            name="description" id="description"
+            name="description" 
+            id="description"
             placeholder="Write card description..."
             value={formik.description}
             onBlur={formik.handleBlur}
@@ -109,6 +119,21 @@ const AddNewCard = () => {
             formik.touched.description && formik.errors.description &&
             <p>{formik.errors.description}</p>
           }
+        </div>
+        <div>
+          <label htmlFor="photoUrl">Photo URL</label>
+          <input
+            type="text"
+            name="photoUrl"
+            id="photoUrl"
+            placeholder="https://..."
+            value={formik.photoUrl}
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+          />
+          {formik.touched.photoUrl && formik.errors.photoUrl && (
+            <p>{formik.errors.photoUrl}</p>
+          )}
         </div>
         <input type="submit" value="Add New Card" />
       </form>
