@@ -7,6 +7,7 @@ export const UsersActionTypes = {
   addNew: "adds new user to the data",
   changeData: "change one piece of user data",
   edit: "change user data",
+  ban: "delete user and his data",
 };
 
 const reducer = (state, action) => {
@@ -58,6 +59,11 @@ const reducer = (state, action) => {
           return el;
         }
       });
+    case UsersActionTypes.delete:
+      fetch(`http://localhost:7070/users/${action.id}`, {
+        method: "DELETE",
+      });
+      return state.filter((el) => el.id !== action.id);
     default:
       console.error(`No such reducer actions: ${action.type}`);
       return state;

@@ -4,7 +4,6 @@ import CardsContext from "../../contexts/CardsContext";
 import styled from "styled-components";
 import UsersContext from "../../contexts/UsersContext";
 import CardSummary from "../UI/CardSummary";
-import Card from "../UI/Card";
 
 const SortingEnums = {
   none: "none",
@@ -19,6 +18,8 @@ const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(215, 211, 199);
+  padding-bottom: 1rem;
 
   > h1 {
     text-align: center;
@@ -29,13 +30,14 @@ const StyledSection = styled.section`
     > a {
       text-decoration: none;
       padding: 5px 12px;
-      border: 1px solid black;
-      border-radius: 10px 5px;
+      border: 2px solid white;
+      border-radius: 10px;
+      color: rgb(34, 61, 89);
       transition: 0.3s;
     }
     > a:hover {
-      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      box-shadow: rgb(163, 206, 244) 3px 3px 6px 0px inset,
+        rgba(9, 23, 150, 0.5) -3px -3px 6px 1px inset;
     }
   }
   > div {
@@ -44,6 +46,7 @@ const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
   }
+
   select {
     width: 150px;
     margin: 1rem 0;
@@ -92,7 +95,7 @@ const Cards = () => {
 
   return (
     <StyledSection>
-      <h1>USER DARBU GALERIJA</h1>
+      <h1>Jūsų fotografijos ir komentarai</h1>
       {loggedInUser && (
         <p>
           <Link to="/cards/addNew">Add New Card</Link>

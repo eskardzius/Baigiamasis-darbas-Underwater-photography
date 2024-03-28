@@ -31,6 +31,7 @@ const StyledHome = styled.div`
       bottom: 0px;
       left: 0px;
       background-color: blue;
+      border: 10px white solid;
     }
     > .text-block {
       width: 50%;

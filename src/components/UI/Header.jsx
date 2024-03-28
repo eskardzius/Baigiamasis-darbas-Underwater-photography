@@ -15,6 +15,7 @@ const StyledHeader = styled.header`
   align-items: center;
   padding-right: 20px;
   flex-wrap: wrap;
+  border-bottom: 2px solid white;
 
   > div {
     display: flex;
@@ -43,11 +44,12 @@ const StyledHeader = styled.header`
             color: rgb(68 119 168);
           }
           > a.active {
-            color: #0202d5;
+            color: #f8f8fb;
           }
-          > a:hover {
-            color: #457452;
-          }
+        }
+        > li:hover {
+          box-shadow: rgb(163, 206, 244) 3px 3px 6px 0px inset,
+            rgba(9, 23, 150, 0.5) -3px -3px 6px 1px inset;
         }
       }
     }
@@ -75,7 +77,6 @@ const StyledHeader = styled.header`
     }
   }
   .mainNav {
-    //padding-bottom: 10px;
     > ul {
       display: flex;
       gap: 20px;
@@ -84,12 +85,16 @@ const StyledHeader = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 5px 5px 0px 0px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 10px;
-        padding-right: 10px;
-        background-color: rgb(215, 211, 199);
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: rgba(65, 116, 171, 0.747);
+        margin-bottom: -10px;
+        > a {
+          color: rgb(215, 211, 199);
+          text-decoration: none;
+          font-size: 15px;
+        }
       }
     }
   }
@@ -163,7 +168,10 @@ const Header = () => {
           {loggedInUser && (
             <div className="profile-identity">
               <img src={loggedInUser.photoUrl} alt="user-photo" />
-              <div>{loggedInUser.userName}</div>
+              <div>
+                {loggedInUser.userName}{" "}
+                {loggedInUser.role === "admin" ? <b>(admin)</b> : null}
+              </div>
             </div>
           )}
         </nav>
@@ -188,7 +196,7 @@ const Header = () => {
               <NavLink to="/shop">Paslaugos</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Kontaktai</NavLink>
+              <NavLink to="/contacts">Kontaktai</NavLink>
             </li>
           </ul>
         </nav>

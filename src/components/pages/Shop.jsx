@@ -1,8 +1,24 @@
+import styled from "styled-components";
+
+
+const StyledShop = styled.div`
+    display: flex;  
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(215, 211, 199);
+    > h3 {
+        color: rgb(34, 61, 89);
+        gap: 0px;
+        margin: 40px;
+    }
+`;
+
 const Shop = () => {
     return ( 
-        <>
-        <h1>Paslaugos</h1>
-        </>
+        <StyledShop>
+            <h3>Informacija ruošiama!!! <br /> 
+            Jus dominančiais klausimais dėl paslaugų, susisiekti su manimi galite tiklapio meniu "Kontaktai" nurodytais kontaktais.</h3>
+        </StyledShop>
      );
 }
  
