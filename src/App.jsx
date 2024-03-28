@@ -23,10 +23,10 @@ import EditProfile from "./components/pages/EditProfile";
 const App = () => {
   const { loggedInUser, setLoggedInUser, users } = useContext(UsersContext);
   const StyledSection = styled.section`
-    //height: 100vh;
-    //display: grid;
-    //grid-template-rows: 170px 1fr 140px;
-    //gap: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 198px 1fr 140px;
+    gap: 0;
   `;
 
   useEffect(() => {

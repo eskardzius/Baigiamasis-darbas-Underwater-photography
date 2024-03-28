@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const StyledShop = styled.div`
     display: flex;  
-    align-items: center;
     padding: 20px;
+    height: 100%;
     background-color: rgb(215, 211, 199);
     > h3 {
         color: rgb(34, 61, 89);
