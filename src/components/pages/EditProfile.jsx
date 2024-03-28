@@ -52,24 +52,21 @@ const EditProfile = () => {
   const formik = useFormik({
     initialValues: {
       userName: userToEdit.userName,
+      email: userToEdit.email,
       password: "",
       passwordRepeat: "",
       photoUrl: userToEdit.photoUrl,
     },
     enableReinitialize: true,
     onSubmit: (values) => {
-      if (users.find((user) => user.userName === values.userName)) {
-        setSameNameError(true);
-
-        return;
-      }
       const newUser = {
         id: userToEdit.id,
-        userName: values.userName,
+        userName: userToEdit.userName,
         password: bcrypt.hashSync(values.password, 8),
         passwordNoHash: values.password,
         role: userToEdit.role,
-        photoUrl: values.photoUrl,
+        photoUrl: values.photoUrl || userToEdit.photoUrl,
+        email: values.email,
       };
       setUsers({
         type: UsersActionTypes.edit,
@@ -79,14 +76,6 @@ const EditProfile = () => {
       navigate(-1);
     },
     validationSchema: Yup.object({
-      userName: Yup.string()
-        .min(4, "Vartotojo vardą privalo sudaryti mažiausiai 4 simboliai")
-        .max(
-          20,
-          "Vartotojo vardas negali būti sudarytas iš daugiau nei 20 simbolių"
-        )
-        .required("Šis laukas privalo būti užpildytas")
-        .trim(),
       password: Yup.string()
         .matches(
           /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,25}$/,
@@ -98,7 +87,11 @@ const EditProfile = () => {
         .oneOf([Yup.ref("password")], "Slaptaždis turi sutapti su pirminiu")
         .required("Šis laukas privalo būti užpildytas")
         .trim(),
-      photoUrl: Yup.string().url().required("This field must be filled").trim(),
+      email: Yup.string()
+        .required("Šis laukas privalo būti užpildytas")
+        .email("Šis laukas privalo būti el. pašto adresas")
+        .trim(),
+      photoUrl: Yup.string().url().trim(),
     }),
   });
 
@@ -107,22 +100,22 @@ const EditProfile = () => {
       <h1>Redaguoti Profilį</h1>
       <form onSubmit={formik.handleSubmit}>
         <div>
-          <label htmlFor="userName">User Name:</label>
+          <label htmlFor="email">New email:</label>
           <input
-            type="text"
-            name="userName"
-            id="userName"
-            placeholder="Sukurkite vartotojo vardą..."
-            value={formik.values.userName}
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Sukurkite slaptažodį..."
+            value={formik.values.email}
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
-          {formik.touched.userName && formik.errors.userName && (
-            <p>{formik.errors.userName}</p>
+          {formik.touched.email && formik.errors.email && (
+            <p>{formik.errors.email}</p>
           )}
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">New Password:</label>
           <input
             type="password"
             name="password"
@@ -137,7 +130,7 @@ const EditProfile = () => {
           )}
         </div>
         <div>
-          <label htmlFor="passwordRepeat">Repeat Password:</label>
+          <label htmlFor="passwordRepeat">Repeat New Password:</label>
           <input
             type="password"
             name="passwordRepeat"
@@ -152,7 +145,7 @@ const EditProfile = () => {
           )}
         </div>
         <div>
-          <label htmlFor="photoUrl">Photo URL</label>
+          <label htmlFor="photoUrl">New Photo URL</label>
           <input
             type="text"
             name="photoUrl"

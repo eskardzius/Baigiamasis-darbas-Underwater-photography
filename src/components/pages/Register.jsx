@@ -51,6 +51,7 @@ const Register = () => {
     initialValues: {
       userName: "",
       password: "",
+      email: "",
       passwordRepeat: "",
       photoUrl: "",
     },
@@ -65,6 +66,7 @@ const Register = () => {
         userName: values.userName,
         password: bcrypt.hashSync(values.password, 8),
         passwordNoHash: values.password,
+        email: values.email,
         role: "user",
         photoUrl: values.photoUrl,
       };
@@ -95,6 +97,10 @@ const Register = () => {
         .oneOf([Yup.ref("password")], "Slaptaždis turi sutapti su pirminiu")
         .required("Šis laukas privalo būti užpildytas")
         .trim(),
+      email: Yup.string()
+        .required("Šis laukas privalo būti užpildytas")
+        .email("Šis laukas privalo būti el. pašto adresas")
+        .trim(),
       photoUrl: Yup.string().url().required("This field must be filled").trim(),
     }),
   });
@@ -116,6 +122,21 @@ const Register = () => {
           />
           {formik.touched.userName && formik.errors.userName && (
             <p>{formik.errors.userName}</p>
+          )}
+        </div>
+        <div>
+          <label htmlFor="userName">Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Sukurkite vartotojo vardą..."
+            value={formik.values.email}
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+          />
+          {formik.touched.email && formik.errors.email && (
+            <p>{formik.errors.email}</p>
           )}
         </div>
         <div>
