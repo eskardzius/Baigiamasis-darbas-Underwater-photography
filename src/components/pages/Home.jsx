@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const StyledHome = styled.div`
-  background-color: rgb(215, 211, 199);
+  background-color: rgba(183, 218, 239, 0.684);
   > h2 {
     text-align: center;
-    color: rgb(34, 61, 89);
-    padding-top: 30px;
+    color: rgb(0, 1, 3);
+    padding-top: 60px;
     margin-top: 0;
   }
   > div {
@@ -54,7 +54,7 @@ const StyledHome = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 2fr);
     align-items: center;
-    background-color: rgb(189, 188, 175);
+    background-color: rgb(165, 190, 215);
     > img {
       flex-direction: row;
       justify-content: center;

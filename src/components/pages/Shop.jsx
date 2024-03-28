@@ -5,9 +5,9 @@ const StyledShop = styled.div`
     display: flex;  
     padding: 20px;
     height: 100%;
-    background-color: rgb(215, 211, 199);
+    background-color: rgba(183, 218, 239, 0.684);
     > h3 {
-        color: rgb(34, 61, 89);
+        color: rgb(1, 7, 15);
         gap: 0px;
         margin: 40px;
     }

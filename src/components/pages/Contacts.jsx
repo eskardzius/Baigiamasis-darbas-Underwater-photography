@@ -5,10 +5,11 @@ const StyledContacts = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  padding-bottom: 5rem;
 
-  background-color: rgb(215, 211, 199);
+  background-color: rgba(183, 218, 239, 0.684);
   > h2 {
-    color: rgb(34, 61, 89);
+    color: rgb(0, 3, 7);
     gap: 0px;
     margin: 40px;
   }

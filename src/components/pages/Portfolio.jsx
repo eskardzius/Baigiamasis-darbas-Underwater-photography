@@ -7,9 +7,9 @@ import { v4 as uuid } from "uuid";
 import UsersContext from "../../contexts/UsersContext";
 
 const StyledSection = styled.header`
-  background-color: rgb(215, 211, 199);
   display: flex;
   flex-direction: column;
+  background-color: rgba(183, 218, 239, 0.684);
 
   justify-content: center;
   align-items: center;
@@ -17,6 +17,7 @@ const StyledSection = styled.header`
   h1 {
     margin: 0;
     padding-bottom: 1rem;
+    padding-top: 40px;
   }
   > div {
     display: flex;

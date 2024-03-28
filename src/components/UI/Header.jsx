@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding-right: 20px;
   flex-wrap: wrap;
@@ -87,12 +87,12 @@ const StyledHeader = styled.header`
         justify-content: center;
         align-items: center;
         padding: 10px;
-        border-radius: 10px;
+        //border-radius: 10px;
         border: 2px solid white;
         background-color: rgba(65, 116, 171, 0.747);
         margin-bottom: -10px;
         > a {
-          color: rgb(215, 211, 199);
+          color: white;
           text-decoration: none;
           font-size: 15px;
         }

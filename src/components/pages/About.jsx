@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHome = styled.div`
-background-color: rgb(215, 211, 199);
+background-color: rgba(183, 218, 239, 0.684);
 > h2{
     color: rgb(34, 61, 89);
     margin-top: 0;
@@ -18,6 +18,8 @@ background-color: rgb(215, 211, 199);
         padding-left: 20px;
         float: left;
         margin: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
     }
     > p{
         width: 100%;

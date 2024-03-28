@@ -87,6 +87,60 @@
       "email": "rudis@rudis.lt",
       "role": "user",
       "photoUrl": "https://media1.tenor.com/m/_Gu-m3rOkrMAAAAC/bikini-pig.gif"
+    },
+    {
+      "id": "00c0e888-6006-46e0-8ca8-f027889c6b92",
+      "userName": "Lavrykas",
+      "password": "$2a$08$DurPvGp.oDxno.49lwISMOHh4VvZtlFYS6TY59RDPbij1ALE5qqdO",
+      "passwordNoHash": "Lavrykas123*",
+      "email": "lavrykas@lavrykas.lt",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/Oo-QFES3ZrIAAAAC/tara-arts-bang-tara.gif"
+    },
+    {
+      "id": "6530f740-878d-433d-b22b-2035cae23558",
+      "userName": "Latras",
+      "password": "$2a$08$fIo0nlknB1C6hhqDLmHDQ.OLKM.ffwBwv5RX2DKmx9K3tVsZEaSXu",
+      "passwordNoHash": "Latras123*",
+      "email": "latras@latras.lt",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/7YxGf2punYAAAAAd/funny-face-funny-look.gif"
+    },
+    {
+      "id": "71093957-4b2a-4cc0-af42-dc51e77b4776",
+      "userName": "Vanda",
+      "password": "$2a$08$36ZomBDEfHfKEYJVNkONku8u7JmFgfj4LKqMH6nlQqSToUUumydfy",
+      "passwordNoHash": "Vanda123*",
+      "email": "vanda@vanda.lt",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/KbvduN2hHrgAAAAC/funny-face-funny.gif"
+    },
+    {
+      "id": "74053fc7-9804-4135-b889-3c4f743c2823",
+      "userName": "Aldona",
+      "password": "$2a$08$EZh4xveNZLHVQD1LyFiXS.kEEerdzSNsEYrkYyndQdg7LNdzQE79a",
+      "passwordNoHash": "Aldona123*",
+      "email": "aldona@aldona.lt",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/vN7doP0N-LgAAAAC/sign-of-the-cross-sister-margaret.gif"
+    },
+    {
+      "id": "52cebc73-041d-4fbb-80b7-c3604f08e76e",
+      "userName": "Birutė",
+      "password": "$2a$08$.CEXkcaS9o/yKjckWu2wWOVhLUN3VJhs6nWVld1DQkIC6.4K8ZC/2",
+      "passwordNoHash": "Birute123*",
+      "email": "birute@birute.lt",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/tn8X5tcjyYUAAAAC/wine-wine-time.gif"
+    },
+    {
+      "id": "3b832638-67cb-4760-b14c-db9968747c0f",
+      "userName": "Samulis",
+      "password": "$2a$08$e1mNAditMvRXMijtu/5rduiKEPm1c.EnU6yxMZKuhA0HeODIARjpW",
+      "passwordNoHash": "Samulis123*",
+      "email": "samulis@samulis.lt",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/qx816REBe_4AAAAC/nick-fury-funny-face.gif"
     }
   ],
   "cards": [
@@ -97,7 +151,10 @@
       "likes": [
         "0",
         "8f47dcb3-efed-4a58-9c23-49dcc3fde2b0",
-        "e0198225-145a-4758-b397-51b4ecd8ef39"
+        "e0198225-145a-4758-b397-51b4ecd8ef39",
+        "6530f740-878d-433d-b22b-2035cae23558",
+        "71093957-4b2a-4cc0-af42-dc51e77b4776",
+        "74053fc7-9804-4135-b889-3c4f743c2823"
       ],
       "dislikes": [],
       "comments": [
@@ -112,7 +169,8 @@
             "e0198225-145a-4758-b397-51b4ecd8ef39"
           ],
           "dislikes": [
-            "0"
+            "0",
+            "71093957-4b2a-4cc0-af42-dc51e77b4776"
           ]
         },
         {
@@ -136,6 +194,26 @@
             "e0198225-145a-4758-b397-51b4ecd8ef39"
           ],
           "dislikes": []
+        },
+        {
+          "text": "Gal nori susipazint?",
+          "id": "16662059-eb7c-4516-a6b1-4511650aa4db",
+          "authorId": "6530f740-878d-433d-b22b-2035cae23558",
+          "dateAdded": "2024-03-28 22:57:53",
+          "replyTo": null,
+          "likes": [],
+          "dislikes": [
+            "71093957-4b2a-4cc0-af42-dc51e77b4776"
+          ]
+        },
+        {
+          "text": "grazu tai grazu... bet koki pikts...tas snkukys",
+          "id": "3ea1a53a-ebff-4961-970e-a51283da5ea7",
+          "authorId": "71093957-4b2a-4cc0-af42-dc51e77b4776",
+          "dateAdded": "2024-03-28 23:05:29",
+          "replyTo": "312968f5-30b2-4ef2-a735-678e198346fb",
+          "likes": [],
+          "dislikes": []
         }
       ],
       "edited": true,
@@ -149,9 +227,14 @@
       "dateAdded": "2024-03-28 14:57:25",
       "likes": [
         "0",
-        "092bf66c-88ae-4198-a3b0-b8d7f3db979a"
+        "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+        "00c0e888-6006-46e0-8ca8-f027889c6b92",
+        "6530f740-878d-433d-b22b-2035cae23558",
+        "71093957-4b2a-4cc0-af42-dc51e77b4776"
       ],
-      "dislikes": [],
+      "dislikes": [
+        "74053fc7-9804-4135-b889-3c4f743c2823"
+      ],
       "comments": [
         {
           "text": "Grazus Karasikas :D",
@@ -195,7 +278,8 @@
           "dateAdded": "2024-03-28 21:30:25",
           "replyTo": "583f7ba9-7539-4556-b070-93aa8c5a8254",
           "likes": [
-            "092bf66c-88ae-4198-a3b0-b8d7f3db979a"
+            "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+            "6530f740-878d-433d-b22b-2035cae23558"
           ],
           "dislikes": []
         },
@@ -216,7 +300,51 @@
           "authorId": "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
           "dateAdded": "2024-03-28 21:31:19",
           "replyTo": null,
+          "likes": [
+            "00c0e888-6006-46e0-8ca8-f027889c6b92"
+          ],
+          "dislikes": []
+        },
+        {
+          "text": "Aha, tikrai linksmas karasikas",
+          "id": "055337a5-20c4-4191-945c-9f6ae9888040",
+          "authorId": "00c0e888-6006-46e0-8ca8-f027889c6b92",
+          "dateAdded": "2024-03-28 22:52:09",
+          "replyTo": "583f7ba9-7539-4556-b070-93aa8c5a8254",
+          "likes": [
+            "6530f740-878d-433d-b22b-2035cae23558"
+          ],
+          "dislikes": [
+            "00c0e888-6006-46e0-8ca8-f027889c6b92"
+          ]
+        },
+        {
+          "text": "Kokia optika buvo naudojama?",
+          "id": "d11852ad-43c9-4f0c-9e07-ba86d16405e3",
+          "authorId": "00c0e888-6006-46e0-8ca8-f027889c6b92",
+          "dateAdded": "2024-03-28 22:52:58",
+          "replyTo": null,
           "likes": [],
+          "dislikes": []
+        },
+        {
+          "text": "Vakar kaip tik parsitempiau namo pora karasiku, gal nori?",
+          "id": "0fcd901d-7c3b-48e1-a081-133132058d92",
+          "authorId": "00c0e888-6006-46e0-8ca8-f027889c6b92",
+          "dateAdded": "2024-03-28 22:53:10",
+          "replyTo": "3b74e512-a388-42dc-bf91-41fcfa41d41a",
+          "likes": [],
+          "dislikes": []
+        },
+        {
+          "text": "Alaus bus? :D",
+          "id": "0bf2dd73-8db2-4a55-9a1a-3ed2286df7d8",
+          "authorId": "6530f740-878d-433d-b22b-2035cae23558",
+          "dateAdded": "2024-03-28 22:56:15",
+          "replyTo": "3b74e512-a388-42dc-bf91-41fcfa41d41a",
+          "likes": [
+            "6530f740-878d-433d-b22b-2035cae23558"
+          ],
           "dislikes": []
         }
       ],
@@ -229,7 +357,9 @@
       "id": "6908d1a5-4ec6-480f-a6c5-91e759689c2e",
       "userId": "0",
       "dateAdded": "2024-03-28 15:03:00",
-      "likes": [],
+      "likes": [
+        "52cebc73-041d-4fbb-80b7-c3604f08e76e"
+      ],
       "dislikes": [],
       "edited": false,
       "comments": [
@@ -252,7 +382,10 @@
       "userId": "1",
       "dateAdded": "2024-03-28 16:07:02",
       "likes": [
-        "0"
+        "0",
+        "6530f740-878d-433d-b22b-2035cae23558",
+        "71093957-4b2a-4cc0-af42-dc51e77b4776",
+        "74053fc7-9804-4135-b889-3c4f743c2823"
       ],
       "dislikes": [],
       "edited": false,
@@ -295,6 +428,35 @@
           "replyTo": "f639617d-dfda-4e74-bc3d-f5c0511d4791",
           "likes": [],
           "dislikes": []
+        },
+        {
+          "text": "Puikus kadras! Bet Karasikas labiau patiko, ten alaus siulo :D",
+          "id": "3356fd19-d868-4f21-a6f0-fab066a79df2",
+          "authorId": "6530f740-878d-433d-b22b-2035cae23558",
+          "dateAdded": "2024-03-28 22:58:59",
+          "replyTo": null,
+          "likes": [],
+          "dislikes": [
+            "74053fc7-9804-4135-b889-3c4f743c2823"
+          ]
+        },
+        {
+          "text": "O viespateliau kaip grazu ",
+          "id": "329ad617-8a0e-4922-99be-2f3dab9f75d7",
+          "authorId": "74053fc7-9804-4135-b889-3c4f743c2823",
+          "dateAdded": "2024-03-28 23:33:59",
+          "replyTo": null,
+          "likes": [],
+          "dislikes": []
+        },
+        {
+          "text": "Be Dieviai :(",
+          "id": "a5a9461e-e632-412a-affe-fb8faee1e356",
+          "authorId": "74053fc7-9804-4135-b889-3c4f743c2823",
+          "dateAdded": "2024-03-28 23:34:46",
+          "replyTo": "3356fd19-d868-4f21-a6f0-fab066a79df2",
+          "likes": [],
+          "dislikes": []
         }
       ],
       "title": "World record underwater photo shoot",
@@ -312,6 +474,67 @@
       "title": "Undervater nude photography",
       "description": "P: Christian Zink www.lichtfang-foto.de",
       "photoUrl": "https://scontent.fvno2-1.fna.fbcdn.net/v/t39.30808-6/398961952_6980390395361048_6090881755454998078_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jGTPLrvNk0wAX8lnaGT&_nc_ht=scontent.fvno2-1.fna&oh=00_AfBlWqBY0AbAOSBYghRHeAZa0RsOUUEGuMjL9VJieNSQBw&oe=660AA32C"
+    },
+    {
+      "id": "5de1fc84-6b52-44e7-9a3c-4fbf37d4fc57",
+      "userId": "00c0e888-6006-46e0-8ca8-f027889c6b92",
+      "dateAdded": "2024-03-28 22:49:22",
+      "likes": [
+        "00c0e888-6006-46e0-8ca8-f027889c6b92",
+        "74053fc7-9804-4135-b889-3c4f743c2823"
+      ],
+      "dislikes": [],
+      "comments": [
+        {
+          "text": "Puikus darbas",
+          "id": "ba688b0d-d927-436e-b29a-6f5383f80752",
+          "authorId": "00c0e888-6006-46e0-8ca8-f027889c6b92",
+          "dateAdded": "2024-03-28 22:51:19",
+          "replyTo": null,
+          "likes": [],
+          "dislikes": []
+        }
+      ],
+      "edited": true,
+      "title": "Underwater",
+      "description": "UnderwaterPhotography",
+      "photoUrl": "https://xray-mag.com/sites/default/files/public/styles/portrait_mode_750_wide_/public/2020-11/018_0.jpg.webp?itok=Hq7qg3_Q"
+    },
+    {
+      "id": "a6e312dd-3aa4-4510-9765-149e7dcfa2f0",
+      "userId": "74053fc7-9804-4135-b889-3c4f743c2823",
+      "dateAdded": "2024-03-28 23:33:31",
+      "likes": [],
+      "dislikes": [],
+      "edited": false,
+      "comments": [],
+      "title": "Neriam",
+      "description": "Reflections at the water’s surface help relay the image’s message. Such shots are ideally done in the evening or at night. Model: Seda Karadeniz. Photo by Rico Besserdich.",
+      "photoUrl": "https://xray-mag.com/sites/default/files/public/2020-11/003_4.jpg"
+    },
+    {
+      "id": "6bc8cbc2-661b-4eaa-93dd-142e3fdbd04b",
+      "userId": "52cebc73-041d-4fbb-80b7-c3604f08e76e",
+      "dateAdded": "2024-03-28 23:40:48",
+      "likes": [],
+      "dislikes": [],
+      "edited": false,
+      "comments": [],
+      "title": "Krevietka",
+      "description": "A shrimp (pl.: shrimp (US) or shrimps (UK)) is a crustacean (a form of shellfish) with an elongated body and a primarily swimming mode of locomotion – typically belonging to the Caridea or Dendrobranchiata of the decapod order, although some crustaceans outside of this order are also referred to as \"shrimp\".",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Palaemon_serratus_Croazia.jpg"
+    },
+    {
+      "id": "2558438b-673b-4027-a9a8-8c4d0487a1d4",
+      "userId": "3b832638-67cb-4760-b14c-db9968747c0f",
+      "dateAdded": "2024-03-28 23:45:55",
+      "likes": [],
+      "dislikes": [],
+      "edited": false,
+      "comments": [],
+      "title": "Indonezijos koralinis rifas",
+      "description": "Coral bleaching is the process when corals become white due to loss of symbiotic algae and photosynthetic pigments. This loss of pigment can be caused by various stressors, such as changes in temperature, light, or nutrients.",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lodestone_Reef_Valentines_Day_2016%2C_Green_Chromis_on_Coral.jpg/2560px-Lodestone_Reef_Valentines_Day_2016%2C_Green_Chromis_on_Coral.jpg"
     }
   ],
   "portfolios": [

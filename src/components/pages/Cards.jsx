@@ -18,11 +18,12 @@ const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(215, 211, 199);
+  background-color: #9bbfd9;
   padding-bottom: 1rem;
 
   > h1 {
     text-align: center;
+    padding-top: 40px;
   }
   > p {
     text-align: center;
@@ -31,7 +32,6 @@ const StyledSection = styled.section`
       text-decoration: none;
       padding: 5px 12px;
       border: 2px solid white;
-      border-radius: 10px;
       color: rgb(34, 61, 89);
       transition: 0.3s;
     }
