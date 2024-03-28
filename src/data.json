@@ -19,9 +19,11 @@
     {
       "id": "2",
       "userName": "Povilas",
-      "password": "$2a$10$ePfT5LCJgMtdTtpjHSBRWuJX5vqmIOXzX451V8m5aKvW8RF34cUdW",
-      "passwordNoHash": "p12345",
-      "role": "user"
+      "password": "$2a$08$4GNOgA7nub3wK9qy3yfmpuBylQaucHhoGG.ZryoI2TgPmLdFBOuKy",
+      "passwordNoHash": "Povilas123*",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/121RkGxcIOQAAAAC/horse-smile.gif",
+      "email": "povilas@povilas.lt"
     },
     {
       "id": "c9aaa20f-ed7c-401d-bcf1-8bb94cfcef18",
@@ -189,22 +191,34 @@
       ],
       "dislikes": [],
       "edited": false,
-      "comments": [
-        {
-          "text": "Komentaras 12434",
-          "id": "0bb0dcb4-efe7-4601-9421-a1f93dfc7eb3",
-          "authorId": "7663fab2-c8fb-4f45-9e8b-6a3b5492dd01",
-          "dateAdded": "2024-03-28 09:04:59",
-          "replyTo": null,
-          "likes": [
-            "0"
-          ],
-          "dislikes": []
-        }
-      ],
+      "comments": [],
       "title": "very cool cat23",
       "description": "frwefwefwefwef",
       "photoUrl": "https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*"
+    },
+    {
+      "id": "bacecc63-53e7-4acd-b763-a6cc069f92c1",
+      "userId": "2",
+      "dateAdded": "2024-03-28 14:57:25",
+      "likes": [],
+      "dislikes": [],
+      "comments": [],
+      "edited": true,
+      "title": "Pavalgęs ešeriuks",
+      "description": "Vencavo ežeras",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Bluegill_fish_underwater.jpg"
+    },
+    {
+      "id": "6908d1a5-4ec6-480f-a6c5-91e759689c2e",
+      "userId": "0",
+      "dateAdded": "2024-03-28 15:03:00",
+      "likes": [],
+      "dislikes": [],
+      "edited": false,
+      "comments": [],
+      "title": "ClunFish",
+      "description": "Clownfish, žinomas taip pat kaip klounų žuvis arba amfiprionas, yra maža, bet išskirtinė jūrų žuvis, kuri žavi savo ryškiais spalvomis ir unikalia sąveika su kitomis jūrų gyvūnų rūšimis. Šios žuvies populiarumas išaugo dėl jos pasirodymo animaciniame filme „Nemo ieško“, kuris padėjo jai tapti viena iš žinomiausių ir mėgstamiausių akvariumų gyventojų pasaulyje.",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg"
     }
   ],
   "mycards": [
