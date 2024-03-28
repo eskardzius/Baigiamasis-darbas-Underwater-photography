@@ -78,6 +78,15 @@
       "email": "kostas@kostas",
       "role": "user",
       "photoUrl": "https://media1.tenor.com/m/0nqWlxYf7kkAAAAC/hehe-mr-bean.gif"
+    },
+    {
+      "id": "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+      "userName": "Rudis",
+      "password": "$2a$08$y.YRm45//wKKwSaGhFIYsuxmDraRla6Y5hcke3gWvfQtQofmbDfEe",
+      "passwordNoHash": "Rudis123*",
+      "email": "rudis@rudis.lt",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/_Gu-m3rOkrMAAAAC/bikini-pig.gif"
     }
   ],
   "cards": [
@@ -122,7 +131,7 @@
           "id": "0b81aef1-ebcb-408d-8181-aaa6739e884f",
           "authorId": "e0198225-145a-4758-b397-51b4ecd8ef39",
           "dateAdded": "2024-03-28 20:19:22",
-          "replyTo": null,
+          "replyTo": "e0198225-145a-4758-b397-51b4ecd8ef39",
           "likes": [
             "e0198225-145a-4758-b397-51b4ecd8ef39"
           ],
@@ -139,16 +148,17 @@
       "userId": "2",
       "dateAdded": "2024-03-28 14:57:25",
       "likes": [
-        "0"
+        "0",
+        "092bf66c-88ae-4198-a3b0-b8d7f3db979a"
       ],
       "dislikes": [],
       "comments": [
         {
           "text": "Grazus Karasikas :D",
           "id": "46be7f37-e053-4b65-b6fd-f54f3bebe576",
-          "authorId": "0",
+          "authorId": "f3435ce4-ab2a-48f4-9a1a-f4c7b410b3ee",
           "dateAdded": "2024-03-28 15:27:56",
-          "replyTo": null,
+          "replyTo": "46be7f37-e053-4b65-b6fd-f54f3bebe576",
           "likes": [],
           "dislikes": []
         },
@@ -157,6 +167,55 @@
           "id": "f3435ce4-ab2a-48f4-9a1a-f4c7b410b3ee",
           "dateAdded": "2024-03-28 20:13:37",
           "replyTo": "46be7f37-e053-4b65-b6fd-f54f3bebe576",
+          "likes": [],
+          "dislikes": []
+        },
+        {
+          "text": "Kokis grazu Karasikas :)",
+          "id": "15fae69f-8a64-4fef-8aac-8900855d125e",
+          "authorId": "0",
+          "dateAdded": "2024-03-28 21:16:32",
+          "replyTo": "46be7f37-e053-4b65-b6fd-f54f3bebe576",
+          "likes": [],
+          "dislikes": []
+        },
+        {
+          "text": "Kokiam ezere fotografuota",
+          "id": "583f7ba9-7539-4556-b070-93aa8c5a8254",
+          "authorId": "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+          "dateAdded": "2024-03-28 21:29:13",
+          "replyTo": null,
+          "likes": [],
+          "dislikes": []
+        },
+        {
+          "text": "Rudzio ezere",
+          "id": "1bb51e47-4b26-42e9-b54b-4c469514f86b",
+          "authorId": "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+          "dateAdded": "2024-03-28 21:30:25",
+          "replyTo": "583f7ba9-7539-4556-b070-93aa8c5a8254",
+          "likes": [
+            "092bf66c-88ae-4198-a3b0-b8d7f3db979a"
+          ],
+          "dislikes": []
+        },
+        {
+          "text": "O kur toki atrast?",
+          "id": "ec04f4a5-ed0e-41d4-8eb7-8040a544a693",
+          "authorId": "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+          "dateAdded": "2024-03-28 21:30:43",
+          "replyTo": "583f7ba9-7539-4556-b070-93aa8c5a8254",
+          "likes": [],
+          "dislikes": [
+            "092bf66c-88ae-4198-a3b0-b8d7f3db979a"
+          ]
+        },
+        {
+          "text": "Uzsimaniau pavalgyt :D",
+          "id": "3b74e512-a388-42dc-bf91-41fcfa41d41a",
+          "authorId": "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+          "dateAdded": "2024-03-28 21:31:19",
+          "replyTo": null,
           "likes": [],
           "dislikes": []
         }
@@ -179,7 +238,7 @@
           "id": "a827a878-715a-4d21-bd92-c3c3a7112497",
           "authorId": "2c48fbc0-2c0e-44a4-8677-4c215c8d4c52",
           "dateAdded": "2024-03-28 20:12:42",
-          "replyTo": null,
+          "replyTo": "46be7f37-e053-4b65-b6fd-f54f3bebe576",
           "likes": [],
           "dislikes": []
         }
@@ -203,7 +262,7 @@
           "id": "7eb653b6-c091-4038-8829-e4d655641eb3",
           "authorId": "0",
           "dateAdded": "2024-03-28 20:21:51",
-          "replyTo": null,
+          "replyTo": "46be7f37-e053-4b65-b6fd-f54f3bebe576",
           "likes": [],
           "dislikes": []
         },
@@ -213,7 +272,9 @@
           "authorId": "2c48fbc0-2c0e-44a4-8677-4c215c8d4c52",
           "dateAdded": "2024-03-28 20:27:36",
           "replyTo": "7eb653b6-c091-4038-8829-e4d655641eb3",
-          "likes": [],
+          "likes": [
+            "0"
+          ],
           "dislikes": []
         },
         {
@@ -221,7 +282,17 @@
           "id": "f639617d-dfda-4e74-bc3d-f5c0511d4791",
           "authorId": "2c48fbc0-2c0e-44a4-8677-4c215c8d4c52",
           "dateAdded": "2024-03-28 20:29:02",
-          "replyTo": null,
+          "replyTo": "46be7f37-e053-4b65-b6fd-f54f3bebe576",
+          "likes": [],
+          "dislikes": [
+            "0"
+          ]
+        },
+        {
+          "text": "Aha tikrai",
+          "id": "1d4e94c4-212a-4649-96d8-36d407cb82e3",
+          "dateAdded": "2024-03-28 21:17:31",
+          "replyTo": "f639617d-dfda-4e74-bc3d-f5c0511d4791",
           "likes": [],
           "dislikes": []
         }
@@ -229,6 +300,18 @@
       "title": "World record underwater photo shoot",
       "description": "Brantford model Ciara Antoski poses at the bow of a shipwreck at Tobermory in a photo shoot with Hamilton photographer Steve Haining in June 2021. The shoot set a Guinness World Record at 21 feet for 16 minutes. PHOTO BY STEVE HAINING PHOTO BY STEVE HAINING",
       "photoUrl": "https://smartcdn.gprod.postmedia.digital/nexus/wp-content/uploads/2023/07/br-0715-br-underwater.jpg?quality=90&strip=all&w=944&h=708&type=webp&sig=Ag1T3E75QJiTMNGlxlKAWQ"
+    },
+    {
+      "id": "06ebb2a9-e88f-4966-b38a-a75dd0b7ff38",
+      "userId": "092bf66c-88ae-4198-a3b0-b8d7f3db979a",
+      "dateAdded": "2024-03-28 21:34:18",
+      "likes": [],
+      "dislikes": [],
+      "edited": false,
+      "comments": [],
+      "title": "Undervater nude photography",
+      "description": "P: Christian Zink www.lichtfang-foto.de",
+      "photoUrl": "https://scontent.fvno2-1.fna.fbcdn.net/v/t39.30808-6/398961952_6980390395361048_6090881755454998078_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jGTPLrvNk0wAX8lnaGT&_nc_ht=scontent.fvno2-1.fna&oh=00_AfBlWqBY0AbAOSBYghRHeAZa0RsOUUEGuMjL9VJieNSQBw&oe=660AA32C"
     }
   ],
   "portfolios": [
@@ -309,7 +392,7 @@
       "photoUrl": "https://scontent.fvno2-1.fna.fbcdn.net/v/t39.30808-6/406232588_10220177647351943_5229556654423639764_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8iUN7Vf5XI4AX8lLsgJ&_nc_ht=scontent.fvno2-1.fna&oh=00_AfCDR3F8Jpsi2uFx3rs9KXANOhbXc7SrWkAFvjg3d-uhHw&oe=660AE409"
     },
     {
-      "id": "db190f6f-3e7d-4d88-8737-e68e3c17d6de",
+      "id": "a475b42b-9507-4989-b075-de7b6f4d69f5",
       "photoUrl": "https://scontent.fvno2-1.fna.fbcdn.net/v/t39.30808-6/406273365_10220177671472546_3572983570446078842_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=r-mTbqrRW5EAX9Pyb8Z&_nc_ht=scontent.fvno2-1.fna&oh=00_AfAALdCStVgtznQZmMuguUr1p5k-3if6AsQUN79ITUtWZw&oe=660BA705"
     }
   ]
