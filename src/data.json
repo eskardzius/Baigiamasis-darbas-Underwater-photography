@@ -2,77 +2,209 @@
   "users": [
     {
       "id": "0",
-      "userName": "MrAdmin",
-      "password": "$2a$08$adKDmja0RQamK08GpqX1eugwnxRXiwc7sB0dI/gb5sTyQTQTBqUg6",
-      "passwordNoHash": "m12345",
-      "role": "admin"
+      "userName": "Admin",
+      "password": "$2a$08$TuHYope6fjwf.eVpCBrpCOJEwjTsp3ny.2aNGB0ZfaCT9at9/wqGC",
+      "passwordNoHash": "Admin123*",
+      "role": "admin",
+      "photoUrl": "https://media1.tenor.com/m/7kLvDreDOtgAAAAC/bobby-bowden.gif"
     },
     {
       "id": "1",
-      "userName": "Domas",
-      "password": "$2a$08$7mCkD1B0rrseIn.hlrU.PuX99X4YDyo.eT1J7GFyiGKeqXmkWA9AW",
-      "passwordNoHash": "d12345",
-      "role": "user"
+      "userName": "Horsas",
+      "password": "$2a$08$56gEINuLwMSIMthEARinPOFDQLJsmDIEfnLZbM0r8TYZ2sI/7WxSS",
+      "passwordNoHash": "Domas123*",
+      "role": "user",
+      "photoUrl": "https://media1.tenor.com/m/121RkGxcIOQAAAAC/horse-smile.gif"
     },
     {
       "id": "2",
       "userName": "Povilas",
-      "password": "$2a$08$Q/knWERPIcs3avnrWfkdluY/y57QR7vvmEqkthm49YVelFwQq.rZW",
+      "password": "$2a$10$ePfT5LCJgMtdTtpjHSBRWuJX5vqmIOXzX451V8m5aKvW8RF34cUdW",
       "passwordNoHash": "p12345",
       "role": "user"
+    },
+    {
+      "id": "c9aaa20f-ed7c-401d-bcf1-8bb94cfcef18",
+      "userName": "Tomas",
+      "password": "$2a$08$rhghugJG0jFvz2hVbbIihu.cwJiImHxuZ3eqmTJmCgegrV8cNeQJ.",
+      "passwordNoHash": "Passw0rd!",
+      "role": "user"
+    },
+    {
+      "id": "cc3ce7bc-00be-4251-aa06-705c1337b589",
+      "userName": "Tomas2",
+      "password": "$2a$08$fk3e7E2r3Zm2139YYVMy9.dl0lG5J70pH6GJkVzysovHjT0EydAZ2",
+      "passwordNoHash": "Passw0rd!",
+      "role": "user"
+    },
+    {
+      "id": "8f47dcb3-efed-4a58-9c23-49dcc3fde2b0",
+      "userName": "Tomas3",
+      "password": "$2a$08$JiDfcXg6r7zozHpy9ndWhOQI6f98wLjxs7.XIEwC32KB9UVM.vi7q",
+      "passwordNoHash": "Passw0rd!",
+      "role": "user"
+    },
+    {
+      "id": "5184b228-d5c3-4132-95e0-41215eeb5c49",
+      "userName": "Tomas5",
+      "password": "$2a$08$/.PrWqzNKg2VxfPag4sTleuAtLJaxH.IwsjOu9D8YkKCAEOAOLA3q",
+      "passwordNoHash": "Passw0rd!",
+      "role": "user"
+    },
+    {
+      "id": "09e9978e-0b62-451c-9a1f-fb041b137b9a",
+      "userName": "Tomas6",
+      "password": "$2a$08$6L.thhA1pERq.5D82FjrYu3ADiZI5fNM8CMMUDlD9HsKLIgIenFvW",
+      "passwordNoHash": "Passw0rd!",
+      "role": "user",
+      "photoUrl": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk"
+    },
+    {
+      "id": "7663fab2-c8fb-4f45-9e8b-6a3b5492dd01",
+      "userName": "Tomas74534543",
+      "password": "$2a$08$zolfUL43BW5KB3TqDZfwU.9PTP3Z5FUlVN/02PKSxowlnUhXeX7bi",
+      "passwordNoHash": "Passw0rd!",
+      "role": "user",
+      "photoUrl": "https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*"
+    },
+    {
+      "id": "340f09cf-13c4-43fa-a203-0eb5df7a6d72",
+      "userName": "Tomas8",
+      "password": "$2a$08$B70EiKIAcDGLW9XlXEThQeK088DQPRiiyoT5uc3BIY0id4IYH/JM6",
+      "passwordNoHash": "Passw0rd!",
+      "role": "user",
+      "photoUrl": "https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*"
     }
   ],
   "cards": [
     {
-      "id": "0",
-      "userId": "1",
-      "type": "Nature Photography",
-      "photo": "https://yaffa-cdn.s3.amazonaws.com/yaffadsp/images/dmImage/StandardImage/z8_hero1.jpg",
-      "camera": "Canon EOS 5D MK4",
-      "lens": "Canon 16-35mm, f2.8",
-      "housing": "SeaandSea",
-      "flashes": "SeaandSea d2",
-      "F-Stop": 5.6,
-      "Exposure": 260,
-      "iso": 3200,
-      "country": "Lithuania",
-      "place": "lake",
-      "deph": 3,
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+      "id": "9fe88a7a-e308-4bd1-9d02-048f930b9290",
+      "userId": "0",
+      "dateAdded": "2024-03-27 12:27:46",
+      "likes": [
+        "0",
+        "8f47dcb3-efed-4a58-9c23-49dcc3fde2b0"
+      ],
+      "dislikes": [],
+      "comments": [
+        {
+          "text": "fwergergergergerge",
+          "id": "881b6d55-edad-4935-b291-6f6500dfcbda",
+          "authorId": "8f47dcb3-efed-4a58-9c23-49dcc3fde2b0",
+          "dateAdded": "2024-03-27 14:58:01",
+          "replyTo": null,
+          "likes": [
+            "0",
+            "2",
+            "1"
+          ],
+          "dislikes": [
+            "8f47dcb3-efed-4a58-9c23-49dcc3fde2b0"
+          ]
+        },
+        {
+          "text": "Vienas du trys",
+          "id": "732ec325-db31-44c1-bb95-31aadf8b9ead",
+          "authorId": "0",
+          "dateAdded": "2024-03-28 09:27:26",
+          "replyTo": null,
+          "likes": [
+            "0"
+          ],
+          "dislikes": [
+            "1"
+          ]
+        },
+        {
+          "text": "12314334",
+          "id": "81a1f492-6588-4036-a6e2-58905eb9762e",
+          "authorId": "0",
+          "dateAdded": "2024-03-28 09:30:41",
+          "replyTo": "881b6d55-edad-4935-b291-6f6500dfcbda",
+          "likes": [],
+          "dislikes": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum, massa elementum pellentesque cursus, enim ex tincidunt leo, vitae consequat neque augue sit amet lorem. Duis mi dolor, vulputate a feugiat ut, pharetra id metus. Duis efficitur non nulla vel fringilla. Nulla facilisis lectus pellentesque urna aliquet tempus.",
+          "id": "312968f5-30b2-4ef2-a735-678e198346fb",
+          "authorId": "0",
+          "dateAdded": "2024-03-28 10:48:03",
+          "replyTo": null,
+          "likes": [
+            "1"
+          ],
+          "dislikes": []
+        }
+      ],
+      "edited": true,
+      "title": "Cute Cat",
+      "description": "Very cool cat",
+      "photoUrl": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk"
     },
     {
-      "id": "0",
-      "userId": "2",
-      "type": "Nature Photography",
-      "photo": "https://yaffa-cdn.s3.amazonaws.com/yaffadsp/images/dmImage/StandardImage/z8_hero1.jpg",
-      "camera": "Canon EOS 5D MK4",
-      "lens": "Canon 16-35mm, f2.8",
-      "housing": "SeaandSea",
-      "flashes": "SeaandSea d2",
-      "F-Stop": 5.6,
-      "Exposure": 260,
-      "iso": 3200,
-      "country": "Lithuania",
-      "place": "lake",
-      "deph": 3,
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+      "id": "6ad8b330-302c-4aea-b1e2-193054cfe5b4",
+      "userId": "0",
+      "dateAdded": "2024-03-28 08:44:28",
+      "likes": [],
+      "dislikes": [],
+      "comments": [],
+      "edited": true,
+      "title": "Another Cat",
+      "description": "asdfrgergerg",
+      "photoUrl": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk"
     },
     {
-      "id": "0",
-      "userId": "3",
-      "type": "Nature Photography",
-      "photo": "https://yaffa-cdn.s3.amazonaws.com/yaffadsp/images/dmImage/StandardImage/z8_hero1.jpg",
-      "camera": "Canon EOS 5D MK4",
-      "lens": "Canon 16-35mm, f2.8",
-      "housing": "SeaandSea",
-      "flashes": "SeaandSea d2",
-      "F-Stop": 5.6,
-      "Exposure": 260,
-      "iso": 3200,
-      "country": "Lithuania",
-      "place": "lake",
-      "deph": 3,
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+      "id": "6f9be151-45bf-408f-84ed-2b07c122ff88",
+      "userId": "0",
+      "dateAdded": "2024-03-28 08:45:15",
+      "likes": [],
+      "dislikes": [],
+      "edited": false,
+      "comments": [],
+      "title": "Cute Cat2",
+      "description": "asdasdadfad",
+      "photoUrl": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk"
+    },
+    {
+      "id": "7419b5e6-99be-4c8e-b69b-5443d9ed53e2",
+      "userId": "09e9978e-0b62-451c-9a1f-fb041b137b9a",
+      "dateAdded": "2024-03-28 09:01:32",
+      "likes": [],
+      "dislikes": [],
+      "edited": false,
+      "comments": [],
+      "title": "Cool cat65",
+      "description": "fsfgwrrgergreg",
+      "photoUrl": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk"
+    },
+    {
+      "id": "c1abbd04-8e98-4308-a193-6fcc6ce376c0",
+      "userId": "7663fab2-c8fb-4f45-9e8b-6a3b5492dd01",
+      "dateAdded": "2024-03-28 09:04:14",
+      "likes": [
+        "0"
+      ],
+      "dislikes": [],
+      "edited": false,
+      "comments": [
+        {
+          "text": "Komentaras 12434",
+          "id": "0bb0dcb4-efe7-4601-9421-a1f93dfc7eb3",
+          "authorId": "7663fab2-c8fb-4f45-9e8b-6a3b5492dd01",
+          "dateAdded": "2024-03-28 09:04:59",
+          "replyTo": null,
+          "likes": [
+            "0"
+          ],
+          "dislikes": []
+        }
+      ],
+      "title": "very cool cat23",
+      "description": "frwefwefwefwef",
+      "photoUrl": "https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*"
     }
   ],
   "mycards": [

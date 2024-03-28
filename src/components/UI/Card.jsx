@@ -49,5 +49,3 @@ const Card = ({ data, location }) => {
 }
  
 export default Card;
-
-

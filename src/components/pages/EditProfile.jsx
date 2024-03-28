@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import UsersContext from "../../contexts/UsersContext";
 import styled from "styled-components";
 import { v4 as uuid } from "uuid";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { UsersActionTypes } from "../../contexts/UsersContext";
 import bcrypt from "bcryptjs";
 
@@ -42,18 +42,21 @@ const StyledSection = styled.section`
   }
 `;
 
-const Register = () => {
+const EditProfile = () => {
   const navigate = useNavigate();
+  const { id } = useParams();
   const [sameNameError, setSameNameError] = useState(false);
   const { users, setUsers, setLoggedInUser } = useContext(UsersContext);
+  const userToEdit = users.find((user) => user.id === id);
 
   const formik = useFormik({
     initialValues: {
-      userName: "",
+      userName: userToEdit.userName,
       password: "",
       passwordRepeat: "",
-      photoUrl: "",
+      photoUrl: userToEdit.photoUrl,
     },
+    enableReinitialize: true,
     onSubmit: (values) => {
       if (users.find((user) => user.userName === values.userName)) {
         setSameNameError(true);
@@ -61,19 +64,19 @@ const Register = () => {
         return;
       }
       const newUser = {
-        id: uuid(),
+        id: userToEdit.id,
         userName: values.userName,
         password: bcrypt.hashSync(values.password, 8),
         passwordNoHash: values.password,
-        role: "user",
+        role: userToEdit.role,
         photoUrl: values.photoUrl,
       };
       setUsers({
-        type: UsersActionTypes.addNew,
+        type: UsersActionTypes.edit,
         data: newUser,
       });
       setLoggedInUser(newUser);
-      navigate("/");
+      navigate(-1);
     },
     validationSchema: Yup.object({
       userName: Yup.string()
@@ -101,7 +104,7 @@ const Register = () => {
 
   return (
     <StyledSection>
-      <h1>Register</h1>
+      <h1>Redaguoti Profilį</h1>
       <form onSubmit={formik.handleSubmit}>
         <div>
           <label htmlFor="userName">User Name:</label>
@@ -155,7 +158,7 @@ const Register = () => {
             name="photoUrl"
             id="photoUrl"
             placeholder="https://..."
-            value={formik.photoUrl}
+            value={formik.values.photoUrl}
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
@@ -163,11 +166,11 @@ const Register = () => {
             <p>{formik.errors.photoUrl}</p>
           )}
         </div>
-        <input type="submit" value="Registruotis" />
+        <input type="submit" value="Pakeisti" />
       </form>
       {sameNameError && <p>Username is invalid</p>}
     </StyledSection>
   );
 };
 
-export default Register;
+export default EditProfile;

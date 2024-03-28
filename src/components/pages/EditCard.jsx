@@ -1,10 +1,9 @@
 import UsersContext from "../../contexts/UsersContext";
 import CardsContext from "../../contexts/CardsContext";
 import { useContext } from "react";
-import { useFormik } from "formik";
+import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
-import { useNavigate } from "react-router-dom";
-import { v4 as uuid } from "uuid";
+import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { CardsActionTypes } from "../../contexts/CardsContext";
 
@@ -13,8 +12,6 @@ const StyledSection = styled.section`
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
-  padding-bottom: 70px;
-  background-color: rgb(215, 211, 199);
 
   > h1 {
     font-size: 3rem;
@@ -41,39 +38,39 @@ const StyledSection = styled.section`
   }
 `;
 
-const AddNewCard = () => {
+const EditCard = () => {
   const navigate = useNavigate();
   const { loggedInUser } = useContext(UsersContext);
   const { setCards } = useContext(CardsContext);
-  const date = new Date();
+  const { id } = useParams();
+  const { cards } = useContext(CardsContext);
+
+  const card = cards.find((card) => card.id === id);
 
   const formik = useFormik({
     initialValues: {
-      title: "",
-      description: "",
-      photoUrl: "",
+      title: card.title,
+      description: card.description,
+      photoUrl: card.photoUrl,
     },
+    enableReinitialize: true,
     onSubmit: (values) => {
       const newCard = {
-        id: uuid(),
+        id: id,
         userId: loggedInUser.id,
-        dateAdded: date.toLocaleDateString("lt-LT", {
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-        }),
-        likes: [],
-        dislikes: [],
-        edited: false,
-        comments: [],
+        dateAdded: card.dateAdded,
+        likes: card.likes,
+        dislikes: card.dislikes,
+        comments: card.comments,
+        edited: true,
         ...values,
       };
-
       setCards({
-        type: CardsActionTypes.addNew,
+        type: CardsActionTypes.editCard,
+        cardId: id,
         data: newCard,
       });
-      navigate(-1);
+      navigate(`/cards/${card.id}`);
     },
     validationSchema: Yup.object({
       title: Yup.string()
@@ -92,7 +89,7 @@ const AddNewCard = () => {
 
   return (
     <StyledSection>
-      <h1>Add New Card</h1>
+      <h1>Edit Card</h1>
       <form onSubmit={formik.handleSubmit}>
         <div>
           <label htmlFor="title">Title:</label>
@@ -101,7 +98,7 @@ const AddNewCard = () => {
             name="title"
             id="title"
             placeholder="Write card title..."
-            value={formik.title}
+            value={formik.values.title}
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
@@ -115,7 +112,7 @@ const AddNewCard = () => {
             name="description"
             id="description"
             placeholder="Write card description..."
-            value={formik.description}
+            value={formik.values.description}
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
@@ -130,7 +127,7 @@ const AddNewCard = () => {
             name="photoUrl"
             id="photoUrl"
             placeholder="https://..."
-            value={formik.photoUrl}
+            value={formik.values.photoUrl}
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
@@ -138,10 +135,10 @@ const AddNewCard = () => {
             <p>{formik.errors.photoUrl}</p>
           )}
         </div>
-        <input type="submit" value="Add New Card" />
+        <input type="submit" value="Submit changes" />
       </form>
     </StyledSection>
   );
 };
 
-export default AddNewCard;
+export default EditCard;
