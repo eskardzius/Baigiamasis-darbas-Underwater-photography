@@ -33,10 +33,16 @@ const StyledSection = styled.header`
   }
   .image-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
     width: 100%;
     max-width: 1100px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
     img {
       width: 200px;
       height: 200px;
@@ -44,6 +50,10 @@ const StyledSection = styled.header`
       padding: 1rem;
       border: 1px solid #000;
       padding: 1rem 1rem;
+    }
+    button {
+      cursor: pointer;
+      width: 75px;
     }
   }
 `;
@@ -69,6 +79,13 @@ const Portfolio = () => {
     photoUrlRef.current.value = "";
   };
 
+  const deletePortfolio = (id) => {
+    setPortfolios({
+      type: PortfolioActionTypes.delete,
+      id: id,
+    });
+  };
+
   return (
     <StyledSection>
       <h1>Portfolio</h1>
@@ -81,7 +98,12 @@ const Portfolio = () => {
       )}
       <div className="image-container">
         {portfolios.map((el) => (
-          <img src={`${el.photoUrl}`} key={el.id}></img>
+          <div key={el.id}>
+            <img src={`${el.photoUrl}`} />
+            {loggedInUser.role === "admin" && (
+              <button onClick={() => deletePortfolio(el.id)}>Delete</button>
+            )}
+          </div>
         ))}
       </div>
     </StyledSection>
