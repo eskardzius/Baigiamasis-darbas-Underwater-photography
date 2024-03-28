@@ -58,6 +58,7 @@ const StyledHeader = styled.header`
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
+    z-index: 10;
   }
   > nav {
     > ul {
