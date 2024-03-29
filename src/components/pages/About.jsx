@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
 const StyledHome = styled.div`
+display: flex;
+flex-direction: column;
+height: 100%    ;
 background-color: rgba(183, 218, 239, 0.684);
 > h2{
+    display: flex;
+    justify-content: center;
     color: rgb(34, 61, 89);
     margin-top: 0;
-    padding-top: 40px ;
+    padding-top: 80px ;
     padding-left: 32px;
 }
 > div{
@@ -14,7 +19,6 @@ background-color: rgba(183, 218, 239, 0.684);
     gap: 10px;
     > img{
         width: 40%;
-        height: 100%;
         padding-left: 20px;
         float: left;
         margin: 5px;

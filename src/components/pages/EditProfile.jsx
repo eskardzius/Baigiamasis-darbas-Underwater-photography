@@ -14,7 +14,8 @@ const StyledSection = styled.section`
   align-items: center;
   padding-top: 40px;
   padding-bottom: 80px;
-  background-color: rgb(215, 211, 199);
+  height: 100%;
+  background-color: rgba(183, 218, 239, 0.684);
 
   > h1 {
     font-size: 2rem;

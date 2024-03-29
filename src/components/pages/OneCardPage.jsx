@@ -9,7 +9,7 @@ import CardHeader from "../UI/Card/CardHeader";
 const StyledSection = styled.section`
   padding-top: 10px;
   overflow-y: scroll;
-  background-color: rgb(215, 211, 199);
+  background-color: rgba(183, 218, 239, 0.684);
   header {
     display: flex;
     justify-content: space-between;
